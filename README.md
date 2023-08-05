@@ -14,9 +14,9 @@ SQL-Migrate 是一个 SQL 转换器，用于在 SQLite 数据库与 MySQL 数据
 
 使用以下命令从 PyPI 安装 SQL-Migrate：
 
-\\\bash
+```bash
 pip install sql-migrate
-\\\
+```
 
 ## 使用说明
 
@@ -24,9 +24,9 @@ pip install sql-migrate
 
 要将 SQLite 数据库转换为 MySQL 数据库，请执行以下命令：
 
-\\\bash
+```bash
 sql-migrate sqlite-to-mysql -s <SQLite数据库文件> -u <MySQL用户名> -p <MySQL密码> -d <目标MySQL数据库名> -h <MySQL主机地址>
-\\\
+```
 
 - \`<SQLite数据库文件>\`: 要转换的 SQLite 数据库文件的路径。
 - \`<MySQL用户名>\`: MySQL 数据库的用户名。
@@ -51,15 +51,15 @@ sql-migrate mysql-to-sqlite -s <MySQL数据库名> -u <MySQL用户名> -p <MySQL
 
 将 SQLite 数据库文件 "data.db" 转换为 MySQL 数据库，用户名为 "root"，密码为 "password"，目标数据库名为 "mysql_db"，MySQL 主机地址为 "localhost"：
 
-\\\bash
+```bash
 sql-migrate sqlite-to-mysql -s data.db -u root -p password -d mysql_db -h localhost
-\\\
+```
 
 将 MySQL 数据库 "mysql_db" 转换为 SQLite 文件 "output.sqlite"，用户名为 "root"，密码为 "password"：
 
-\\\bash
+```bash
 sql-migrate mysql-to-sqlite -s mysql_db -u root -p password -d output.sqlite
-\\\
+```
 
 ## 贡献
 
